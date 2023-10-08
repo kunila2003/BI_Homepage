@@ -1,0 +1,340 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     background-color: black;
+     color: white;
+     font-family: sans-serif;
+ }
+ 
+ .navbar {
+     position: absolute;
+     top: 0;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 20px; /* Updated padding to use fixed values */
+     z-index: 10;
+ }
+ 
+ .navbar_netflix {
+     width: 125px;
+     height: 100%;
+ }
+ 
+ .navbar_nav_items {
+     display: flex;
+     gap: 10px;
+ }
+ 
+ .netflix_log {
+     width: 60%;
+     height: 60%;
+     border-radius: 50%;
+ }
+ 
+ .language_drop_down {
+     background: transparent;
+     border: none;
+     color: white;
+ }
+ 
+ .dropdown_container {
+     border: 1px solid white;
+     padding: 0.4rem;
+     border-radius: 4px;
+     background: rgba(0, 0, 0, 0.4);
+ }
+ 
+ .Signin_button {
+     border: 1px solid #dc030f; /* Updated border property */
+     background-color: #dc030f;
+     color: white;
+     padding: 0.25rem 0.5rem;
+     border-radius: 4px;
+     width: 100px;
+     height: 35px;
+ }
+ 
+ .hero_bg_image_container {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ .hero_bg_image {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+ 
+ .hero_bg_overlay {
+     position: absolute;
+     inset: 0;
+     width: 100%;
+     height: 105%;
+     background-color: rgba(0, 0, 0, 0.4);
+ }
+ 
+ .hero_card {
+     position: absolute;
+     top: 30%;
+     left: 13%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+ 
+ .hero_title {
+     font-weight: 100;
+     font-size: 4rem;
+ }
+ 
+ .hero_subtitle,
+ .hero_description {
+     font-weight: 400;
+     font-size: 1.3rem;
+ }
+ 
+ .email {
+     width: 450px;
+     height: 50px;
+     color: black;
+     padding: 0.25rem 0.5rem;
+     border-radius: 3px;
+     border-color: wheat;
+     opacity: 0.9;
+     background-color: transparent;
+ }
+ 
+ .get_started {
+     font-size: large;
+     width: 170px;
+     height: 50px;
+     background-color: #dc030f;
+     border: 1px solid #dc030f;
+     color: white;
+ }
+
+
+ /* Styling for the heading */
+.about h1 {
+     text-align: center;
+     margin-top: 20px;
+   color: aqua;
+     font-size: 24px;
+     font-weight: bold;
+   }
+   
+   /* Styling for the container of the three boxes */
+   .imprtContainer {
+     display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     margin-top: 50px;
+   }
+   
+   /* Styling for each box */
+   .box {
+     width: 30%; /* Adjust the width as needed */
+     margin: 12px;
+     background-color: #f0f0f09f;
+     padding: 10px;
+     text-align: center;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     box-shadow: 0px 0px 30px 2px green;
+     
+   }
+   
+   /* Styling for the box images */
+   .box img {
+     width: 100px; /* Adjust the image size as needed */
+     height: 100px; /* Adjust the image size as needed */
+     border-radius: 50%;
+     object-fit: cover;
+    transform: translateX(77px);
+   }
+   
+   /* Hover effect for the boxes */
+   .box:hover {
+     transform: scale(1.05);
+     box-shadow: 0 0 10px purple;
+     color: purple;
+   }
+   
+   .imprtContainer .box p{
+    font-size: 13px;
+   }
+   .sale1 , .sale2{
+  
+    text-align: center;
+   }
+   .sale1{
+    margin-top: 30px;
+    color: green;
+   }
+   .sale2{
+    color: aqua;
+    margin-bottom: 20px;
+   }
+   .bookselling{
+ 
+    
+     display: grid;
+    margin: 10px 15px 20px 15px ;
+     grid-template-columns: auto auto auto ;
+     /*
+     grid-column-gap:5px;
+     grid-row-gap:10px; */
+     grid-gap:20px 40px;/* first value is for row and second is for column*/
+   }
+   .bookselling div{
+    padding: 30px;
+   background: rgba(245, 222, 179, 0.333);
+    font-size: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px purple;
+    transition: 1s ease-in;
+   }
+   .bookselling div:hover {
+background: rgba(141, 88, 194, 0.723);
+   }
+   .bookselling img{
+    height: 160px;
+    width: 150px;
+   }
+   .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: -.2rem 3rem;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+   border: black;
+    color: black;
+    cursor: pointer;
+    transition: 2s;
+    box-shadow:0px 0px 10px  green;
+}
+.btn:hover{
+    background:orange;
+    color: black;
+}
+.bookselling i{
+font-size: 20px;
+color: rgb(157, 87, 87);
+
+}
+.bookselling .sale{
+    font-size: 13px;
+    height: 5px;
+    width: 10px;
+    background-color: red;
+    color: black;
+    padding: 2px;
+ border-radius: 5px;
+ margin-top: 20px;
+}
+.bookselling p{
+    font-size: 25px;
+    color: azure;
+}
+.bookselling b{
+    font-size: 18px;
+    color: yellowgreen;
+}
+
+
+
+
+.footer{
+    background: #ffffff3c;
+    margin: 50px 10px 0px 10px;
+}
+.footer .box-container{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: 34% 34% 32%; 
+    grid-gap:10px 0px;
+}
+.footer .box-container .box{
+    width: auto;
+    height: 400px;
+    border-radius: 7px;
+    background: none;
+}
+.footer .box-container .box h3{
+    font-size: 1.4rem;
+    color: aqua;
+    padding: 1rem 0;
+}
+.footer .box-container .box h3 i{
+    color: orange;
+}
+.footer .box-container .box .link
+{
+    display: block;
+    font-size: 1rem;
+    color: orange;
+    padding: .5rem 0;
+    text-decoration: none;
+}
+.footer .box-container .box .link i
+{
+color: orange;
+padding-right: 3rem 0;
+padding: 0.8rem;
+   margin-left: 0.5rem;
+   font-size: 1rem;
+}
+
+.footer .box-container .box .link:hover i{
+    padding-right: 1rem;
+}
+
+.footer .box-container .box p{
+  line-height: 1.8;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 0;
+    text-transform: capitalize;
+}
+.footer .box-container .box .share a{
+    border: 0px solid;
+    height: 2rem;
+    width: 2rem;
+    line-height: 1rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    color: black;
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+    padding: 5px;
+}
+.footer .box-container .box .share a:hover{
+    background-color: #ff7000;
+    color: #fff;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: black;
+    border-top: border;
+}
+.footer .credit span{
+    color: orange;
+}
+
+
+
+
